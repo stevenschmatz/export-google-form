@@ -1,9 +1,18 @@
-# export-google-form
-A small Google Apps Script file to export a form into a JSON file.
+# Google Form JSON exporter
+
+A small Google Apps Script file to export a form into a JSON file. This form JSON object can then be used to build tools to collect form responses though other clients than the web interface.
 
 ### Installation
 
-* Create a Google Apps script.
+* Create a [Google Apps Script file](https://developers.google.com/apps-script/).
+* Copy and paste the code in `src/Code.gs`.
+* Replace this line of code with your form editing URL:
+
+```js
+var URL = "<your-form-editing-url-here>";
+```
+
+Then you are good to go!
 
 
 ### Example output
