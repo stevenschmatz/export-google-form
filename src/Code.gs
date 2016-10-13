@@ -111,6 +111,10 @@ function itemToObject(item) {
       
       break;
       
+    case FormApp.ItemType.PAGE_BREAK:
+      data.pageNavigationType = typedItem.getPageNavigationType().toString();
+      break;
+      
     default:
       break;
   }
