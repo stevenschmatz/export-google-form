@@ -50,6 +50,7 @@ function itemToObject(item) {
   var data = {};
   
   data.type = item.getType().toString();
+  data.title = item.getTitle();
   
   // Downcast items to access type-specific properties
   
