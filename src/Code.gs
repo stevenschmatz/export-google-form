@@ -68,8 +68,8 @@ function itemToObject(item) {
     if (["image", "choices", "type", "alignment"].indexOf(propName) != -1) {return};
     
     // Skip feedback-related keys
-    if ("getFeedbackForIncorrect".equals(getKey) || "getFeedbackForCorrect".equals(getKey)
-      || "getGeneralFeedback".equals(getKey)) {return};
+    if ("getFeedbackForIncorrect" === getKey || "getFeedbackForCorrect" === getKey
+      || "getGeneralFeedback" === getKey) {return};
     
     var propValue = typedItem[getKey]();
     
